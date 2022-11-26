@@ -1,32 +1,32 @@
 - GPGPU, OpenCL - vícejadrová architektura
   - Mapa procesoru
       
-    <img src="../images/03-temporal/01.png">
+    <img src="../images/03-gpgpu/01.png">
     
       - kolik křemíku je možné využít souběžně a efektivně
   - Jedno jádro procesoru a žádné SIMD
 
-    <img src="../images/03-temporal/02.png">
+    <img src="../images/03-gpgpu/02.png">
     
     - Jádro procesoru vykonává těžkou, univerzální práci.
       - efektivní predikce větví
     - využívá se jen zlomek tranzistorů
   - Jedno jádro procesoru a SIMD 
 
-    <img src="../images/03-temporal/03.png">
+    <img src="../images/03-gpgpu/03.png">
 
     - Instrukce SIMD zpracovává více datových toků najednou najednou
     - jádro se používá celé 
     - přesto je využit pouze zlomek všech tranzistorů
   - SMP a SIMD
 
-    <img src="../images/03-temporal/04.png">
+    <img src="../images/03-gpgpu/04.png">
 
     - Značná část použitého křemíku
     - Přesto stále významná část (GPGPU) nevyužitá
   - GPGPU (vicevláknový)
 
-    <img src="../images/03-temporal/05.png">
+    <img src="../images/03-gpgpu/05.png">
 
     - GPGU má mnoho jednoduchých procesorových jader
     - Vyniká při zpracování nezávislých datových toků
@@ -44,7 +44,7 @@
   - CPU řídí DMA, které přenáší data z/do externí GPGU
 - Task vs Data Paralelismus
 
-    <img src="../images/03-temporal/06.png">
+    <img src="../images/03-gpgpu/06.png">
 
   - Task paralelismus (CPU)
     - Několik složitých úloh s větvením na několika datových tocích
@@ -65,18 +65,18 @@
 
   - Nezarovnaný přístup (Unaligned access)
 
-    <img src="../images/03-temporal/07.png">
+    <img src="../images/03-gpgpu/07.png">
 
   - Přednačítání paměti
     - Sekvenční přístup podporuje prokládání výpočtu s předběžným načítáním dat
     - Náhodný přístup tuto výhodu kazí
 
-    <img src="../images/03-temporal/08.png">
+    <img src="../images/03-gpgpu/08.png">
   
   - Volný přístup do paměti (spare memory access)
     - Čtení jednoho prvku bloku řádků mezipaměti plýtvá šířkou pásma
 
-    <img src="../images/03-temporal/09.png">
+    <img src="../images/03-gpgpu/09.png">
   
     - Uvažujme velikost bloku 4
     - ¼ využité šířky pásma, ¾ promarněné šířky pásma
@@ -102,7 +102,7 @@
         - Externí GPU
   - Součet vetorů na CPU
 
-    <img src="../images/03-temporal/10.png">
+    <img src="../images/03-gpgpu/10.png">
 
   - Součet vekrotů na GPGPU
     - OpenCL
@@ -114,13 +114,13 @@
     - Kernel spustí jednou pro každý work-item
   - Součet vektorů na OpenCL zařízení
 
-      <img src="../images/03-temporal/11.png">
+      <img src="../images/03-gpgpu/11.png">
 
   - ND-Range
     - Work-group mapa na výpočetní jednotce
     - Work-item se mapuje na zpracovávaný prvek (element)
       
-    <img src="../images/03-temporal/12.png">
+    <img src="../images/03-gpgpu/12.png">
 
   - Wavefront
     - zahrnuje řadu work-itemů
@@ -128,13 +128,13 @@
     - spouští se na jedné výpočetní jednotce odkud work-itemy 
       - odkud work-itemy provádí na prvcích zpracovávání paralelním způsobem s uzamčeným krokem (lock-stepped parallel fashion)
 
-    <img src="../images/03-temporal/13.png">
+    <img src="../images/03-gpgpu/13.png">
 
     - Programátor nemá kontrolu nad wavefront
       - Runtime OpenCL postupně posílá práci výpočetním jednotkám v blocích jednotlivých Wavefront
   - GPGPU subsystém
 
-    <img src="../images/03-temporal/14.png">
+    <img src="../images/03-gpgpu/14.png">
 
   - Globální paměť
     - nepomalejší ze všech
@@ -161,39 +161,39 @@
     - nebo ze SPIR-V (Standard Portable Intermediate Representation)
     - V obou případech se výsledná binárka optimalizuje pro konkrétní zařízení
 
-    <img src="../images/03-temporal/15.png">
+    <img src="../images/03-gpgpu/15.png">
 
   - OpenCL fronta
 
-    <img src="../images/03-temporal/16.png">
+    <img src="../images/03-gpgpu/16.png">
 
   - OpenCL program
 
-    <img src="../images/03-temporal/17.png">
+    <img src="../images/03-gpgpu/17.png">
 
     - Než začneme cokoli počítat, musíme alokovat paměť, která bude pro zařízení přístupná pro čtení a zápis.
 
-      <img src="../images/03-temporal/18.png">
+      <img src="../images/03-gpgpu/18.png">
 
     - Program -> kompilace -> kernel -> výpočet 
       - Kompilovat jen jednou na každém zařízení aby se snížila řežie
 
-      <img src="../images/03-temporal/19.png">
+      <img src="../images/03-gpgpu/19.png">
 
     - výpis chyb při buildu a warningů
 
-      <img src="../images/03-temporal/20.png">
+      <img src="../images/03-gpgpu/20.png">
     
     - Předání parametrů
       - globální work-size je počet všech work-itemů
       - local size je počet pracovních položek v jedné work-groupě
 
-      <img src="../images/03-temporal/21.png">
+      <img src="../images/03-gpgpu/21.png">
   
     - Pro spuštění kernelu předáme požadavek do fronty
       - tedy jej naplánjeme reps. požádáme OpenCL aby jej naplánoval
 
-      <img src="../images/03-temporal/22.png">
+      <img src="../images/03-gpgpu/22.png">
    
     - Dokud neskončí kernel mohou se dělat další věci
       - posledním parametrem je "clEnqueueNDRangeKernel", který je signalizován při dokončení jádra
@@ -216,20 +216,20 @@
     - Typedef struktury
       - Je možné použít struct, ale musí být definován jak v kódu .c/.cpp, tak v kódu .cl
 
-      <img src="../images/03-temporal/23.png">
+      <img src="../images/03-gpgpu/23.png">
    
     - Redukční operace
       - násobení vektorů - vektor*vektor = skalár
       - nejprve necháme provést kernel násobení jednolivých prvků
       
-      <img src="../images/03-temporal/24.png">
+      <img src="../images/03-gpgpu/24.png">
    
       - poté necháme spustíme kernel aby spočítal součet
         - Efektivní provoz GPGPGU není triviální
         - Ve skutečnosti by to mohlo být provedeno v jediném jádře
     - Násobení vektorů příklad
 
-        <img src="../images/03-temporal/23.png">
+        <img src="../images/03-gpgpu/23.png">
   
     - Barrier vs Fence
       - Fence
@@ -250,7 +250,7 @@
     - Provádí se na hw různých výrobců (včetně nvidie)
     - CPU fallback
       
-    <img src="../images/03-temporal/23.png">
+    <img src="../images/03-gpgpu/23.png">
   
   - C++ AMP
     - OpenCL a CUDA jsou jazyky podobné jazyku C, ale stále se liší od C++
