@@ -206,7 +206,7 @@
               - mohou začít v jiných cyklech proto CPI = 0,5
             - LLC miss (Last level cache miss)
               - poměr všech LLC Misses ve všech cyklech
-            - Instruction starvation
+            - Instruction starvation (Rollback při misspredikci)
               - Jádro čeká na provedení instrukce
               - poměr čekajících cyklu ke všem cyklům
               - důvody:
