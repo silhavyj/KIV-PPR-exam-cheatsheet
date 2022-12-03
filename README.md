@@ -170,3 +170,12 @@
 - Co je to POSIX?
 
 ---
+
+- Co je problem usporadane promenne?
+- V cem spociva naivni pristup paralelniho pocitani prefixovych sum? Jake to ma nevyhody? Na cem zavisi efektivita?
+- Princip optimalniho algoritmu prefix-sum
+- Jaky je rozdil mezi inkluzivnim a exkluzivnim pristupem pri vypoctu prefix-sum?
+- Jaka je aplikace algoritmu prefix-sum?
+- Jaky je princip segmentovane scanu pri pocitani prefix-sum?
+
+---
