@@ -179,3 +179,33 @@
 - Jaky je princip segmentovane scanu pri pocitani prefix-sum?
 
 ---
+
+- Moznosti kvantifikace vhodnosti reseni u evolucnich algoritmu
+- Vyhody/nevyhody evolucnich algoritmu
+- Obecny popis (kroky) evolucniho algoritmu
+- Co vyjadruje fitness funkce?
+- Jak se lisi problem predcasne konvergence a stagnace?
+- Co by mela (teoreticky) splnovat pocatecni populace?
+- V cem spociva naivni myslenka pri tvorbe potomku?
+- Jak je definovana relativni chyba?
+- Jak nebo cim se zaruci minimalni presnost u EA?
+- Cim je davan velikost pocatecni populace?
+- Co je to geneticky drift?
+- Cim je ovlivneny geneticky agoritmus?
+- Co ovlinuje `F` a `CR` parametr? Kdy se tyto parametry nastavuji?
+- Strategie mutaci
+- Co je to meta diferencialni evoluce?
+- Co vytvari mutace u evolucnich algoritmu?
+- Co je to chromozom?
+- Co je to rekombinace? A jake jsou mozne strategie?
+- Jak se da prokazat konvergence a co je to zastavovaci podminka u EA? Jake tam je uskali?
+- Rozdil mezi jemne clenenou a hrube clenou distribuovanou evoluci
+- Co je to tzv island model u EA? Jak se v nem resi problem stagnace?
+- Co je to tzv souostrovni model u EA a jak se lisi od island modelu?
+- Jak se lisi dominalne a slabe lepsi potomek? V cem se tento termin pouziva?
+- Co to je paretova fronta a paterova optimalni mnozina?
+- Je GA podmnozinou EA?
+- Jak se lisi GA od EA?
+- Co je to vice ucelova optimalizace + priklad
+
+---
