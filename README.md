@@ -125,3 +125,48 @@
 - Princip Scattered Load and Shuffling (AoS)
 - K cemu slouzi Expression Templates? Cemu zabranuji? V jake funkci/metode je implementovana samotna logika?
 - Co je Fused Multiply Add?
+- Jaka je vyhoda a nevyhoda pouziti jednoho zamku pri psitupu k datove strukture? Jak se tento problem da resit SW a HW?
+- Co je to fallback path?
+- Co se deje pote co jadro skoci zpet na fallback path?
+- Co je to `ZF` a kde se nachazi?
+- Proc se u HLE i RTM spinlocku nastavuje eax = 0?
+- Kde a k cemu se pouziva xbegin?
+
+---
+
+- K cemu s pouziva Ada, z ceho vychazi a kde vznikla?
+- Princip Rendez Vous?
+- Jak funguje task v Ade?
+- Co se stane kdyz nikdo nezavola vstupni entry u tasku v Ade?
+- K cemu slouzi select v Ade?
+- K cemu v Ade slouzi klicove slovo `type`
+- Jaky je rozdil mezi funkci, procedurou a vsupnim volanim (entry) u Ada objektu?
+- Rozdil mezi taskem a typem v Ade
+- Jaky mechanismus se pouziva v Ade v pripade ze podminka vsupniho volani neni splnena?
+- Proc nejde rades-vous implementovat v Jave jen pomoci monitoru a v C/C++ ano?
+- Co je to Job objekt?
+- Co je planovaci jednotka Windows a Linuxu?
+- V cem spociva problem inverze priorit v real-time OS?
+- Co je impersonating?
+- Princip TLS
+- Co dela klicove slovo `__declspec`
+- K cemu se pouziva Win API ThreadPool?
+- Jaka je vyhoda pouziti Fiber thread a jak se vytvari?
+- Co to je FLS?
+- Co je to lazy init + priklad?
+- Muze fiber pristupovat k TLS?
+- Jak se nastavuje priorita fiberu?
+- Co je to UMS a jak se vytvari a jak se lisi od fiber?
+- Zpusoby synchronizace (alespon 6)
+- Co to je APS?
+- K cemu slouzi pojmenovana podminkova promenna?
+- Co je to SimLock, jake jsou vyhody jeho pouziti a proc se neda pouzit v rekurzi?
+- Jaka je podminka atomicity operace?
+- Kde se pouziva mechanismus posilani zprav? Jaky je rozdil mezi PostMessage a SendMessage?
+- V cem je komplikovanejsi synchronizace procesu oproti synchronizaci vlaken?
+- K cemu se pouziva CreateFileMapping?
+- Co to je .bss?
+- Jak je zajisteno korektni ukonceni vlakne pomoci `return NULL`?
+- Co je to POSIX?
+
+---
