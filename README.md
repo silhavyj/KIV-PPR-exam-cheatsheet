@@ -94,6 +94,7 @@
 - Princip Flow grafu
 - Cim se spusti vypocet na prvnim uzlu ve flow grafu?
 - Load-Balancing na CPU a GPU
+- Proc nemuze byt funckti operator `const` u `tbb::parallel_reduce`?
 
 ---
 
@@ -120,6 +121,11 @@
 - Jaky je rozdil mezi `constexpr` a `consteval`?
 - Co to je LLC miss?
 - Co to je instruction starvation?
+- Jaka je nevyhoda a nevyhoda velkeho poctu fazi v pipeline?
+- Kdy je dobre pouzit `cmov`?
+- Co je to falesna zavislost?
+- Co to je CPI?
+- Rozdil mezi instruction starvation a mispredikce vetve
 
 ---
 
