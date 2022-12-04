@@ -95,6 +95,7 @@
 - Cim se spusti vypocet na prvnim uzlu ve flow grafu?
 - Load-Balancing na CPU a GPU
 - Proc nemuze byt funckti operator `const` u `tbb::parallel_reduce`?
+- Vyhoda TBB oproti OMP
 
 ---
 
@@ -146,6 +147,9 @@
 - Co je to `ZF` a kde se nachazi?
 - Proc se u HLE i RTM spinlocku nastavuje eax = 0?
 - Kde a k cemu se pouziva xbegin?
+- Jak souvisi loop unrolling a branch prediction?
+- Ja se da implementovat `min` bez pouziti `if`?
+- Co obahuje `edx` pri pouziti HLE a RTM?
 
 ---
 
