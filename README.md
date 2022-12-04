@@ -11,9 +11,13 @@
 - K cemu se pouziva a jak je rizeno Systolic Array
 - Princip simplexni komunikace
 - Co je to Front-Side Bus?
+- Pro jaky typ uloh se hodi multiprocesor s distribuovanou pameti?
+- Priklad nepravidelne sitove topologie
 
 ---
 
+- Princip temporalni logiky
+- Co plati o vystupu systemu, ktery je hladny watchdogem?
 - Proc hledame invarianci pri dokazovani spravnosti programu pomoci temporalni logiky?
 - Co je to invariance?
 - Popis problemu vecericich filozofu z pohledu temporalni logiky
@@ -34,6 +38,8 @@
 
 ---
 
+- Po jak velkych blocich nacita CPU data z pameti?
+- K cemu slozi `__attribute__((packed))`?
 - Cim je rizeno GPGPU?
 - Jakym mechanismem se prenasi data z adresniho prostoru procesu na grafiku?
 - Jaky je pozadavek na data, ktera se maji zpracovat na grafice?
@@ -61,6 +67,9 @@
 - Rozdil mezi Fence a Barrier
 - Co je CPU fallback?
 - Co dela klicove slovo `restrict` a klicove slovo `volatile`, priklad pouziti?
+- Co je to online kompilace OpenCL programu?
+- Jaka je podminka pouziti struktury na OpenCL (jako parameter kernelu)?
+- Jak lze synchronizovat work-groupy?
 
 ---
 
@@ -209,3 +218,10 @@
 - Co je to vice ucelova optimalizace + priklad
 
 ---
+
+- Podle jakeho design patternu funguje SETI@Home?
+- Je u SETI@Home pozadavek na stejny HW?
+- Co to je MPI? Je u MPI pozadavek na stejny HW?
+- Co to je Single-Purpose Computer?
+- Princip Wormhole Switching
+- Kdy musi byt distribuce prace dynamicka a kdy na pevno?
