@@ -206,7 +206,9 @@
 - Princip optimalniho algoritmu prefix-sum
 - Jaky je rozdil mezi inkluzivnim a exkluzivnim pristupem pri vypoctu prefix-sum?
 - Jaka je aplikace algoritmu prefix-sum?
-- Jaky je princip segmentovane scanu pri pocitani prefix-sum?
+- Jaky je princip segmentovaneho scanu pri pocitani prefix-sum?
+- Jaka je casova slozitost pri oplimalnim prefix-sum?
+- Co je to Line of Sight?
 
 ---
 
