@@ -176,7 +176,7 @@
 - Muze fiber pristupovat k TLS?
 - Jak se nastavuje priorita fiberu?
 - Co je to UMS a jak se vytvari a jak se lisi od fiber?
-- Zpusoby synchronizace (alespon 6)
+- Zpusoby Win API synchronizace (alespon 6)
 - Co to je APS?
 - K cemu slouzi pojmenovana podminkova promenna?
 - Co je to SimLock, jake jsou vyhody jeho pouziti a proc se neda pouzit v rekurzi?
@@ -186,7 +186,18 @@
 - K cemu se pouziva CreateFileMapping?
 - Co to je .bss?
 - Jak je zajisteno korektni ukonceni vlakne pomoci `return NULL`?
-- Co je to POSIX?
+- Co je to POSIX a co obsahuje?
+- S cim pracuje afinita? S vlakem nebo s procesem?
+- Jaky je rozdil mezi globalnimi, lokalnimi a daty na zasabniku z pohledu WinAPI vlaken?
+- Co je ulozeno v kontextu vlakna?
+- Jak se lisi planovani Fiber a UMS?
+- Jaky vliv ma APC na planovani vlaken?
+- Jak se da pouzit podminkova promenna pro synchronizaci procesu?
+- Co to je SRW lock? Kdy je vhodne jej pouzit?
+- Princip TimerQueue
+- K cemu slouzi `WM_COPYDATA`?
+- Jak OS zajisti ze maji 2 procesy pristup ke stejnemu DLL?
+- Jaky je rozdil mezi OOP objektem a POSIX objektem?
 
 ---
 
