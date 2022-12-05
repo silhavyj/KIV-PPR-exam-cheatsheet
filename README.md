@@ -239,6 +239,9 @@
 - Je GA podmnozinou EA?
 - Jak se lisi GA od EA?
 - Co je to vice ucelova optimalizace + priklad
+- Jake je nevyhoda toho kdyz je pocatecni populace prilis velka?
+- Jak spolu souvisi dimenzita problemu a velikost pocatecni populace?
+- Jaky je rozdil mezi krizenim a rekombinaci?
 
 ---
 
