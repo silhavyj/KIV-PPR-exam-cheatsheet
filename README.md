@@ -249,5 +249,21 @@
 - Je u SETI@Home pozadavek na stejny HW?
 - Co to je MPI? Je u MPI pozadavek na stejny HW?
 - Co to je Single-Purpose Computer?
-- Princip Wormhole Switching
+- Princip Wormhole Switching, co je v tele prvniho a posledniho packetu?
 - Kdy musi byt distribuce prace dynamicka a kdy na pevno?
+- Jaka je nevyhoda Store & Forward pro routovani?
+- Jak funguje adaptive switching?
+- Co je to SPMD?
+- Rozdil mezi homogeninm a heterogenim distribuovanem prostredi
+- Jake urychleni prinasi Farmer-Worker, co je treba zanedbat?
+- Jaka je nevyhoda Lampartovo hodin?
+- Princip lampartovo hodin (co to je, jak to funguje, co se deje pri odesilani/prijimani zpravy)
+- Vysvetli: pokud je C(a) < C(b) nemuzeme dedukovat ze a zposobilo udalost b
+- K cemu slozi vektorove hodiny? Jak se lisi od Lampartovo hodin?
+- Co musi platit aby: pro udalosti a a b plati ze VC(a) < VC(b)?
+- Co je to virtualni topologie a jak v ni funguje komunikace mezi procesy?
+- Jak se daji odhalit klastry ve virtualni topologii?
+- Co je to "Kilometer Square Array"?
+- Vysvetleni funkci map a reduce v distirbuovanem prostredi a v SMP
+- Jak se daji napevno namapovat procesy na jednotlive jadra SMP?
+- Jake jsou hlavni vlastnosti distribuovaneho systemu?
