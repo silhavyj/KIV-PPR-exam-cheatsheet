@@ -177,7 +177,7 @@
 - Jak se nastavuje priorita fiberu?
 - Co je to UMS a jak se vytvari a jak se lisi od fiber?
 - Zpusoby Win API synchronizace (alespon 6)
-- Co to je APS?
+- Co to je APC?
 - K cemu slouzi pojmenovana podminkova promenna?
 - Co je to SimLock, jake jsou vyhody jeho pouziti a proc se neda pouzit v rekurzi?
 - Jaka je podminka atomicity operace?
