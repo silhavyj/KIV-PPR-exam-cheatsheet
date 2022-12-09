@@ -1,3 +1,5 @@
+## 01-topology
+
 - Jake jsou nevyhody hybridniho CPU?
 - Co je Intel Quick Path?
 - Co je NUMA a jake jsou jeji vyhody a nevyhody?
@@ -14,7 +16,7 @@
 - Pro jaky typ uloh se hodi multiprocesor s distribuovanou pameti?
 - Priklad nepravidelne sitove topologie
 
----
+## 02-temporal
 
 - Princip temporalni logiky
 - Co plati o vystupu systemu, ktery je hladny watchdogem?
@@ -36,7 +38,7 @@
 - Proc musi byt komunakce v obecnem byzanskem problemu synchronizovana (+ jak se resi synchronizace)?
 - Co je fail-stop a fault tolerant v obecnem byzanskem problemu?
 
----
+## 03-gpgpu
 
 - Po jak velkych blocich nacita CPU data z pameti?
 - K cemu slozi `__attribute__((packed))`?
@@ -71,7 +73,7 @@
 - Jaka je podminka pouziti struktury na OpenCL (jako parameter kernelu)?
 - Jak lze synchronizovat work-groupy?
 
----
+## 04-sycl
 
 - Co je to SYCL?
 - Co je to AMP?
@@ -97,7 +99,7 @@
 - Proc nemuze byt funckti operator `const` u `tbb::parallel_reduce`?
 - Vyhoda TBB oproti OMP
 
----
+## 05-pipeline
 
 - Roste urychleni programu linearni s poctem jader?
 - V cem spociva efektivita sablon v C++?
@@ -128,7 +130,7 @@
 - Co to je CPI?
 - Rozdil mezi instruction starvation a mispredikce vetve
 
----
+## 06-simd
 
 - Na cem zavisi urychleni pri pouziti SIMD instrukci?
 - Co umoznuje vetsi urychleni? Vektorizace nebo paralelizace?
@@ -151,7 +153,7 @@
 - Ja se da implementovat `min` bez pouziti `if`?
 - Co obahuje `edx` pri pouziti HLE a RTM?
 
----
+## 07-os
 
 - K cemu s pouziva Ada, z ceho vychazi a kde vznikla?
 - Princip Rendez Vous?
@@ -199,7 +201,7 @@
 - Jak OS zajisti ze maji 2 procesy pristup ke stejnemu DLL?
 - Jaky je rozdil mezi OOP objektem a POSIX objektem?
 
----
+## 08-prefix
 
 - Co je problem usporadane promenne?
 - V cem spociva naivni pristup paralelniho pocitani prefixovych sum? Jake to ma nevyhody? Na cem zavisi efektivita?
@@ -210,7 +212,7 @@
 - Jaka je casova slozitost pri oplimalnim prefix-sum?
 - Co je to Line of Sight?
 
----
+## 09-evolution
 
 - Moznosti kvantifikace vhodnosti reseni u evolucnich algoritmu
 - Vyhody/nevyhody evolucnich algoritmu
@@ -243,7 +245,7 @@
 - Jak spolu souvisi dimenzita problemu a velikost pocatecni populace?
 - Jaky je rozdil mezi krizenim a rekombinaci?
 
----
+## 11-distributed
 
 - Podle jakeho design patternu funguje SETI@Home?
 - Je u SETI@Home pozadavek na stejny HW?
